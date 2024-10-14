@@ -14,16 +14,16 @@ include 'generate-sales.php'; // Include the separate file that contains the rep
 <body>
   <div id="wrapper">
     <header>
-      <img src="../case-study-5/assets/header.png" width="550" height="100">
+      <img src="../assets/header.png" width="550" height="100">
     </header>
     <div id="leftcolumn">
       <nav>
-            <a href="../case-study-5/pages/homepage.html">Home</a>
-            <a href="../case-study-5/pages/menu.php">Menu</a>
-            <a href="../case-study-5/pages/music.html">Music</a>
-            <a href="../case-study-5/pages/jobs.html">Jobs</a>
-            <a href="../case-study-5/pages/price-update.php">Update</a>
-            <a href="../case-study-5/pages/salesreport.php">Sales</a>
+            <a href="../pages/homepage.html">Home</a>
+            <a href="../pages/menu.php">Menu</a>
+            <a href="../pages/music.html">Music</a>
+            <a href="../pages/jobs.html">Jobs</a>
+            <a href="../pages/price-update.php">Update</a>
+            <a href="../pages/salesreport.php">Sales</a>
         <nav>
     </div>
     <div id="rightcolumn">
