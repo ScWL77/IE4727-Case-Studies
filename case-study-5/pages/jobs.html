@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lighthouse Island Bistro</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../case-study-5/css/style.css">
+  <script type="text/javascript" src="../case-study-5/javascript/jobs_validator.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <img src="../case-study-5/assets/header.png" width="550" height="100">
+    </header>
+    <div id="leftcolumn">
+      <nav>
+        <a href="../case-study-5/pages/homepage.html">Home</a>
+        <a href="../case-study-5/pages/menu.php">Menu</a>
+        <a href="../case-study-5/pages/music.html">Music</a>
+        <a href="../case-study-5/pages/jobs.html">Jobs</a>
+        <a href="../case-study-5/pages/price-update.php">Update</a>
+        <a href="../case-study-5/pages/salesreport.php">Sales</a>
+        <nav>
+    </div>
+    <div id="rightcolumn">
+      <div class="content">
+        <h2>Jobs at JavaJam</h2>
+        <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with
+          an asterisk* </p>
+
+        <form action="show_post.php" method="post" id="myForm" onsubmit="return chkExperience()">
+          <div class="container-jobs">
+            <div class="form-example">
+              <label for="name" class="jobs-label">*Name: </label>
+              <input type="text" class="jobs-input"name="name" id="name" placeholder="Enter your name here" required />
+            </div>
+            <div class="form-example">
+              <label for="email" class="jobs-label">*E-mail: </label>
+              <input type="email" class="jobs-input" name="email" id="email" placeholder="Enter your Email-ID here" required />
+            </div>
+            <div class="form-example">
+              <label for="startdate" class="jobs-label">Start Date: </label>
+              <input type="date" class="jobs-input" id="date" name="date">
+            </div>
+            <div class="form-example">
+              <label for="experience" class="jobs-label">*Experience: </label>
+              <textarea id="experience" name="experience" rows="4" cols="50"
+                placeholder="Enter your past experience here"></textarea>
+            </div>
+          </div>
+
+          <br>
+          <div class="buttons">
+            <input class="buttons" type="reset" value="Clear" />
+            <input class="buttons" type="submit" value="Apply Now" />
+          </div>
+        </form>
+        <script>
+          function chkExperience(){
+            var experience = document.forms['myForm']['experience'].value;
+            if(experience == ""){
+              alert("Experience field cannot be empty");
+              return false;
+            }
+          }
+        </script>
+        <script type="text/javascript" src="../javascript/jobs_events.js"></script>
+      </div>
+    </div>
+    <footer>Copyright &copy; 2014 JavaJam Coffee House
+      <br><small><b><a href="mailto:me@hotmail.com">samantha@chang.com</a></b></small>
+    </footer>
+</body>
+
+</html>
